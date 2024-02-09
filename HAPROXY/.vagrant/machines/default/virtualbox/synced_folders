@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"E:/Objectif-devops/ANSIBLE/LAB1/HAPROXY","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
