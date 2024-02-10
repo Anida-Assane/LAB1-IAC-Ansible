@@ -34,11 +34,29 @@ vagrant ssh
 ```
 
 ### Gestion de la configuration avec Ansible
-Maintenant que nous avons nos machines, nous allons configurer un serveur web nginx sur la machine web1 
+Maintenant que nous avons nos machines, nous allons configurer un serveur web apache sur chaque vm.
+Dans le tablea ci-dessous, nous avons les informations sur les vm tels que leurs noms et adresses ip, choses importantes pour la création du fichier d'inventaire Ansible.
+
 | Role |  Nom  | @IP |
 |:-----|:--------:|------:|
 | Noeud de controle   | **vm-control** | 192.168.0.1 |
 | Hote géré 1   |  **web1**  | 192.168.0.2 |
 | Hote géré 2   | **web2** | 192.168.0.3 |
+
+Pour configurer nos serveurs web apaches, nous procéderont ainsi:
+* Installer le paquet httpd
+* Activer le service httpd
+* copier un fichier web.html sur chaque serveur
+
+> [!NOTE]
+> Dans ce lab, nos serveurs sont sur centos 7
+
+Pour la création de nos playbook, nous utiliserons les 3 modules Ansible suivant:
+*yum module
+*service module
+*copy module
+
+
+
 
 
