@@ -74,9 +74,31 @@ Pour lancer notre playbook, la commande est la suivante:
 ```
 ansible-playbook playbook1.yml
 ```
+Une fois le playbook éxécuté, nous allons vérifier que tout c'est bien passé, de l'installation a l'activation du servoce grace a des commandes ad hocs.
 
+Vérification de l'installation du paquet httpd sur web1(a faire aussi sur web2)
+ 
+ ```
+ ansible web1 -m command -a "rpm -qi httpd"
+ ```
+![Capture d'écran 2024-02-10 034918](https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/a59b4dfe-7147-43bc-b43c-c6247eeb2055)
 
+Vérification de l'etat du service(a faire aussi sur web2)
+ 
+ ```
+ ansible web1 -m command -a "systemctl status httpd"
+ ```
+![Capture d'écran 2024-02-10 035057](https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/957aff75-0dfc-4d23-8fec-e4d9ae3cbc16)
 
+Vérification de la réponse du serveur apache suite a une requette http(sur le serveur web2 par exemple)
+ 
+ ```
+ ansible localhost -m uri -a "url=http://192.168.0.3"
+ ```
+
+![Capture d'écran 2024-02-10 031944](https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/5e77f882-bc7d-4633-a8ef-85963fcd3ec8)
+
+Et voila. Notre serveur apache est bien configuré grace a ansible et ses concepts de bases tels que les playbooks.
 
 
 
