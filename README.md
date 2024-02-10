@@ -35,7 +35,7 @@ vagrant ssh
 
 ### Gestion de la configuration avec Ansible
 Maintenant que nous avons nos machines, nous allons configurer un serveur web apache sur chaque vm.
-Dans le tablea ci-dessous, nous avons les informations sur les vm tels que leurs noms et adresses ip, choses importantes pour la création du fichier d'inventaire Ansible.
+Dans le tableau ci-dessous, nous avons les informations sur les vm tels que leurs noms et adresses ip, choses importantes pour la création du fichier d'inventaire Ansible.
 
 | Role |  Nom  | @IP |
 |:-----|:--------:|------:|
@@ -55,6 +55,17 @@ Pour la création de nos playbook, nous utiliserons les 3 modules Ansible suivan
 * yum module
 * service module
 * copy module
+
+Ci-dessous, une capture d'écran de notre playbook.
+
+![Capture d'écran 2024-02-10 032028](https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/3a4d5895-1b94-4e88-8c3e-c1532dd269ab)
+
+> [!NOTE]
+> Le playbook est un fichier avec une extension .yml
+> un fichier yaml commence par ---
+
+
+
 
 
 
