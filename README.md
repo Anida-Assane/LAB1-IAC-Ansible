@@ -24,4 +24,10 @@ Lorsque l'on tape cette commande pour la premiere fois, le processus de créatio
 Cette image si elle n'est pas stocké localement sur notre machine, un pull sera éffectué depuis le vagrant cloud , puis stockera l'image en local.
 Ainsi, l'hyperviseur sera contacté pour créer la machine virtuelle.
 
-Ci dessous, une vidéo explicative de l'architecture de vagrant.
+Ci dessous, une vidéo explicative de l'architecture de vagrant fais a l'aide du logiciel en ligne draw.io
+
+https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/439941cc-d3f8-437a-8ff0-d3c94c887d7a
+
+
+
+
