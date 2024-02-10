@@ -52,9 +52,9 @@ Pour configurer nos serveurs web apaches, nous procéderont ainsi:
 > Dans ce lab, nos serveurs sont sur centos 7
 
 Pour la création de nos playbook, nous utiliserons les 3 modules Ansible suivant:
-*yum module
-*service module
-*copy module
+* yum module
+* service module
+* copy module
 
 
 
