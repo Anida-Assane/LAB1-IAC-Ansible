@@ -14,12 +14,11 @@ Pour creer nos machines virtuelles, nous allons creer pour chacune d'entre elles
 vagrant init centos/7
 ```
 
-Une fois le vagrantfile crée, nous allons lancer le processus de lancement de la Vm a l'aide de la commande suivante
+Une fois le vagrantfile crée, nous allons lancer la Vm a l'aide de la commande suivante
 
 ```
 vagrant up
 ```
-
 Lorsque l'on tape cette commande pour la premiere fois, le processus de création de la Vm débutera a l'aide de l'image spécifiée dans le vagrantfile.
 Cette image si elle n'est pas stocké localement sur notre machine, un pull sera éffectué depuis le vagrant cloud , puis stockera l'image en local.
 Ainsi, l'hyperviseur sera contacté pour créer la machine virtuelle.
@@ -27,6 +26,8 @@ Ainsi, l'hyperviseur sera contacté pour créer la machine virtuelle.
 Ci dessous, une vidéo explicative de l'architecture de vagrant fais a l'aide du logiciel en ligne draw.io
 
 https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/439941cc-d3f8-437a-8ff0-d3c94c887d7a
+
+
 
 
 
