@@ -56,14 +56,24 @@ Pour la création de nos playbook, nous utiliserons les 3 modules Ansible suivan
 * service module
 * copy module
 
-Ci-dessous, une capture d'écran de notre playbook.
+Ci-dessous, une capture d'écran de notre playbook dans lequel nous avons spécifié les taches a faire.
 
 ![Capture d'écran 2024-02-10 032028](https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/3a4d5895-1b94-4e88-8c3e-c1532dd269ab)
 
 > [!NOTE]
-> Le playbook est un fichier avec une extension .yml
-> un fichier yaml commence par ---
+> Le playbook est un fichier avec une extension .yml et commence par ---
 
+Explication des éléments utilisés dans le playbook:
+* name: permet de donner un nom au play ou a une tache
+* hosts: permet de cibler les hotes sur lesquels seront éxécuter le play. Ici c'est sur toutes les 2machines donc **all** comme valeur.
+* become: permet de donner les privileges a l'utilisateur afin d'éxécuter les actions
+* tasks: permet de spécifier les taches a éxécuter
+
+Pour lancer notre playbook, la commande est la suivante:
+
+```
+ansible-playbook playbook1.yml
+```
 
 
 
