@@ -34,6 +34,11 @@ vagrant ssh
 ```
 
 ### Gestion de la configuration avec Ansible
-
+Maintenant que nous avons nos machines, nous allons configurer un serveur web nginx sur la machine web1 
+| Role |  Nom  | @IP |
+|:-----|:--------:|------:|
+| Noeud de controle   | **vm-control** | 192.168.0.1 |
+| Hote géré 1   |  **web1**  | 192.168.0.2 |
+| Hote géré 2   | **web2** | 192.168.0.3 |
 
 
