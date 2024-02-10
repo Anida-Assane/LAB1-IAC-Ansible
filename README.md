@@ -27,8 +27,13 @@ Ci dessous, une vidéo explicative de l'architecture de vagrant fais a l'aide du
 
 https://github.com/Anida-Assane/LAB1-IAC-Ansible/assets/96641266/439941cc-d3f8-437a-8ff0-d3c94c887d7a
 
+Une fois les machines crées, l'utilisateur pourras se connecter aux machines a l'aide de SSH grace a la commande
 
+```
+vagrant ssh
+```
 
+### Gestion de la configuration avec Ansible
 
 
 
